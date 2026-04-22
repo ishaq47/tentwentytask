@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes progress {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-progress {
+  animation: progress 5s linear forwards;
+}
+
+
+@keyframes borderProgress {
+  from {
+    stroke-dashoffset: 416;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lineProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
