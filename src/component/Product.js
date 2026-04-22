@@ -121,7 +121,7 @@ export default function Product() {
         commodo consequat.
       </p>
 
-      {/* Slider */}
+  
 
       <div className="relative flex justify-center items-end h-[390px] lg:h-[690px] overflow-hidden px-4">
         {visibleSlides.map((item, i) => {
@@ -134,7 +134,7 @@ export default function Product() {
               style={{
                 zIndex: isCenter ? 30 : 10,
 
-                /* side cards lower + center card little up */
+                
                 transform: isCenter
                   ? `translateY(-10px) translateX(${
                       isDragging ? dragOffset * 0.25 : 0
@@ -149,8 +149,6 @@ export default function Product() {
                 alt={item.title}
                 className="w-[232px] h-[331px] lg:w-[435px] lg:h-[619px] object-cover "
               />
-
-              {/* drag button */}
               {isCenter && (
                 <div
                   onMouseDown={handleDragStart}
